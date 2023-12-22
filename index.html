@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ===== CSS Files ===== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- ====== Style Switcher ====== -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+</head>
+<body>
+    <!-- ===== Main Container Start ===== -->
+    <div class="main-container">
+        <!-- ===== Aside Start ===== -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>S</span>oS</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ui class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+            </ui>
+        </div>
+        <!-- ===== Aside End ===== -->
+        <!-- ===== Main Content Start ===== -->
+        <div class="main-content">
+            <!-- ===== Home Section Start ===== -->
+            <section class="home section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello,Our name is <span class="name">SoS</span></h3>
+                            <h3 class="my-profession">We are a <span class="typing">Website designer</span></h3>
+                            <p>Hi, we are SoS helping animals anywhere any time</p>
+                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                          </div>
+                          <div class="data:image/jpeg;base64,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" alt="">
+                          </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- ===== Home Section End ===== -->
+            <!-- ===== About section Start ===== -->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Us</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                   <h3>We are Sos <span>For the animals</span></h3>
+                                    <p>Hi We are a nonprofit that helps homeless animals and animals in general</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Birthday : <span>1978</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Age : <span>47</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Website : <span>https://www.sospets.co.il/</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Email : <span>office@sospets.co.il</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                          <p>Degree : <span>CS</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Phone : <span> 03-7441010  03-7441111
+                                            </span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>City : <span>Tel aviv</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Freelance : <span>Available</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#" class="btn">Download CV</a>
+                                            <a href="#content" class="btn hire me">Hire me</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                          <h5>West</h5>
+                                          <div class="progress">
+                                              <div class="progress-in" style="width: 86%;"></div>
+                                              <div class="skill-percent">12%</div>
+                                          </div>
+                                        </div>
+                                          <div class="skill-item padd-15">
+                                              <h5>East</h5>
+                                              <div class="progress">
+                                                  <div class="progress-in" style="width: 66%;"></div>
+                                                  <div class="skill-percent">8%</div>
+                                              </div>
+                                          </div>
+                                                  <div class="skill-item padd-15">
+                                                      <h5>South</h5>
+                                                      <div class="progress">
+                                                          <div class="progress-in" style="width: 96%;"></div>
+                                                          <div class="skill-percent">20%</div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="skill-item padd-15">
+                                                              <h5>North</h5>
+                                                              <div class="progress">
+                                                                  <div class="progress-in" style="width: 76%;"></div>
+                                                                  <div class="skill-percent">16%</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="education padd-15">
+                                                    <h3 class="title">Education</h3>
+                                                    <div class="row">
+                                                      <div class="timeline-box padd-15">
+                                                          <div class="timeline shadow-dark">
+                                                                <!-- ===== timeline item ===== -->
+                                                                <div class="timeline-item">
+                                                                    <div class="circle-dot"></div>
+                                                                    <h3 class="timeline-date">
+                                                                        <i class="fa fa-calendar"></i> 2013 - 2015
+                                                                    </h3>
+                                                                    <h4 class="timeline-title">Master in Computer Science</h4>
+                                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, consectetur pariatur odio possimus quos voluptate repellendus, inventore exercitationem quo, voluptates cum dolor facere ipsum nesciunt!</p>
+                                                                </div>
+                                                                  <!-- ===== timeline item ===== -->
+                                                                  <div class="timeline-item">
+                                                                    <div class="circle-dot"></div>
+                                                                    <h3 class="timeline-date">
+                                                                        <i class="fa fa-calendar"></i> 2006 - This year
+                                                                    </h3>
+                                                                    <h4 class="timeline-title">Hi</h4>
+                                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ad repudiandae quis cumque possimus adipisci. Repellendus, laborum! Corporis repellat, illum dolor, earum rem cupiditate omnis facilis saepe adipisci, optio ipsa..
+                                                                    </p>
+                                                                </div>
+                                                                  <!-- ===== timeline item ===== -->
+                                                                  <div class="timeline-item">
+                                                                    <div class="circle-dot"></div>
+                                                                    <h3 class="timeline-date">
+                                                                        <i class="fa fa-calendar"></i> 2013 - 2015
+                                                                    </h3>
+                                                                    <h4 class="timeline-title">Vine</h4>
+                                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ad repudiandae quis cumque possimus adipisci. Repellendus, laborum! Corporis repellat, illum dolor, earum rem cupiditate omnis facilis saepe adipisci, optio ipsa.. 
+                                                                    </p>
+                                                                </div>
+                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="experience padd-15">
+                                                    <h3 class="title">Experience</h3>
+                                                    <div class="row">
+                                                        <div class="timeline-box padd-15">
+                                                            <div class="timeline shadow-dark">
+                                                                  <!-- ===== timeline item ===== -->
+                                                                  <div class="timeline-item">
+                                                                      <div class="circle-dot"></div>
+                                                                      <h3 class="timeline-date">
+                                                                          <i class="fa fa-calendar"></i> 2013 - 2015
+                                                                      </h3>
+                                                                      <h4 class="timeline-title">Master in Computer Science</h4>
+                                                                      <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, consectetur pariatur odio possimus quos voluptate repellendus, inventore exercitationem quo, voluptates cum dolor facere ipsum nesciunt!</p>
+                                                                  </div>
+                                                                    <!-- ===== timeline item ===== -->
+                                                                    <div class="timeline-item">
+                                                                      <div class="circle-dot"></div>
+                                                                      <h3 class="timeline-date">
+                                                                          <i class="fa fa-calendar"></i> 2013 - 2015
+                                                                      </h3>
+                                                                      <h4 class="timeline-title">Master in Computer Science</h4>
+                                                                      <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, consectetur pariatur odio possimus quos voluptate repellendus, inventore exercitationem quo, voluptates cum dolor facere ipsum nesciunt!</p>
+                                                                  </div>
+                                                                    <!-- ===== timeline item ===== -->
+                                                                    <div class="timeline-item">
+                                                                      <div class="circle-dot"></div>
+                                                                      <h3 class="timeline-date">
+                                                                          <i class="fa fa-calendar"></i> 2013 - 2015
+                                                                      </h3>
+                                                                      <h4 class="timeline-title">Master in Computer Science</h4>
+                                                                      <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, consectetur pariatur odio possimus quos voluptate repellendus, inventore exercitationem quo, voluptates cum dolor facere ipsum nesciunt!</p>
+                                                                  </div>
+                                                      </div>
+                                                          </div>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ===== About section End ===== -->
+            <!-- ===== Services Section Start ===== -->
+            <section class="service section" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- ===== Service item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>A Mobile support platform.</p>
+                            </div>
+                        </div>
+                        <!-- ===== Service item End ===== -->
+                         <!-- ===== Service item Start ====== -->
+                         <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>A Dev website by only Computer</p>
+                            </div>
+                        </div>
+                        <!-- ===== Service item End ===== -->
+                         <!-- ===== Service item Start ====== -->
+                         <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>A designer profession Website</p>
+                            </div>
+                        </div>
+                        <!-- ===== Service item End ===== -->
+                         <!-- ===== Service item Start ====== -->
+                         <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>A code Website</p>
+                            </div>
+                         </div>
+                        <!-- ===== Service item End ===== -->
+                          <!-- ===== Service item Start ====== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>A   able to search</p>
+                        </div>
+                        </div>
+                        <!-- ===== Service item End ===== -->
+                         <!-- ===== Service item Start ===== -->
+                         <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                              <div class="icon">
+                                    <i class="fa fa-bullhorn"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>A announcement Website</p>
+                        </div>
+                         </div>
+                        <!-- ===== Service item End ===== -->
+                </div>
+            </section>
+            <!-- ====== Services Section End ====== -->
+            <!-- ====== Portfolio Section Start ====== -->
+            <section class="portfolio section" id="portfolio">
+               <div class="container">
+                 <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                  <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>Our Animals :</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- ====== portfolio item start ====== -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="https://static.wixstatic.com/media/2325d2_a50f9799ea4e4713b28d75862872b04d~mv2.jpg/v1/crop/x_255,y_0,w_784,h_970/fill/w_227,h_281,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/1620634650526.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                        <!-- ====== portfolio item End ====== -->
+                          <!-- ====== portfolio item start ====== -->
+                          <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="https://static.wixstatic.com/media/2325d2_8094103c6423410b8cdea51d3bac908a~mv2.jpg/v1/crop/x_300,y_0,w_761,h_941/fill/w_227,h_281,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202022-03-20%20at%2011_10_edite.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                        <!-- ====== portfolio item End ====== -->
+                          <!-- ====== portfolio item start ====== -->
+                          <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="https://static.wixstatic.com/media/2325d2_2addcf81be364369be155aa2a568072a~mv2.jpg/v1/crop/x_241,y_0,w_518,h_641/fill/w_227,h_281,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202021-05-25%20at%2008_12_edite.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                        <!-- ====== portfolio item End ====== -->
+                        <!-- ====== portfolio item start ====== -->
+                          <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="https://2zn512orufi92uhj3q40i9j6-wpengine.netdna-ssl.com/wp-content/uploads/2021/07/GHT-Limited.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                        <!-- ====== portfolio item End ====== -->
+                          <!-- ====== portfolio item start ====== -->
+                          <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="https://static.wixstatic.com/media/2325d2_eada8f19080e4bc1ab3c767c0011a162~mv2.jpg/v1/crop/x_273,y_0,w_837,h_1036/fill/w_227,h_281,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/191234436.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                        <!-- ====== portfolio item End ====== -->
+                          <!-- ====== portfolio item start ====== -->
+                          <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                        <!-- ====== portfolio item End ====== -->
+                    </div>
+                </div>
+            </section>
+            <!-- ===== Portfolio Section End ===== -->
+            <!-- ===== Contact Section Start ===== -->
+            <section class="contact section" id="contact">
+              <div class="container">
+                <div class="row">
+                  <div class="section-title padd-15">
+                    <h2>Contact Us</h2>
+                  </div>
+                </div>
+                    <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
+                    <h4 class="contact-sub-title padd-15">i'm at your services</h4>
+                    <div class="row">
+                        <!-- ===== Contact info item start ====== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Us on</h4>
+                            <p>+92 3330545218</p>
+                        </div>
+                        <!-- ===== Contact info item end ====== -->
+                          <!-- ===== Contact info item start ====== -->
+                          <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h4>Office</h4>
+                            <p>Islamabad</p>
+                          </div>
+                    <!-- ===== Contact info item end ====== -->
+                      <!-- ===== Contact info item start ====== -->
+                      <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>info@gmail.com</p>
+                    </div>
+                <!-- ===== Contact info item end ====== -->
+                  <!-- ===== Contact info item start ====== -->
+                  <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                    <h4>Website</h4>
+                    <p>www.domain.com</p>
+                </div>
+                    <!-- ===== Contact info item end ===== -->
+                    </div>
+                    <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                    <h4 class="contact-sub-title padd-15">I'm VERY RESPOSIVE TO MESSAGES</h4>
+                    <!-- ====== Contact Form ====== -->
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                   <button type="submit" class="btn">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </section>
+            <!-- ===== Contact Section End ===== -->
+             </div>
+             <!-- ===== Main Content End ==== = -->
+        </div>
+      <!-- ===== Main Container End ===== -->
+      <!-- ===== Style Switcher Start ===== -->
+      <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+      </div>
+      <!-- ===== Style Switcher End ===== -->
+      <!-- ===== JS Files ===== -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+      <script src="js/script.js"></script>
+      <script src="js/style-switcher.js"></script>
+</body>
+</html>
